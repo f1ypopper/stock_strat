@@ -4,6 +4,7 @@ import psycopg2.extras
 import csv
 import argparse
 
+#Wipe off existing tables and create new tables
 def create_init_tables(cursor):
     return cursor.execute(
         """
